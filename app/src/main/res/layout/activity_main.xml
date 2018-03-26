@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.android.scorekeeper.MainActivity">
+
+    <ImageView
+        android:src="@drawable/baseball4"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="centerCrop" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_weight="1"
+
+            >
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:src="@drawable/giants"
+                android:layout_margin="32dp"/>
+
+            <!--<TextView-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:text="Giants"-->
+                <!--android:gravity="center_horizontal"-->
+                <!--android:padding="4dp"-->
+                <!--android:textSize="24sp"-->
+                <!--android:fontFamily="sans-serif-medium"-->
+                <!--android:textColor="@android:color/white"-->
+                <!--android:layout_marginTop="16dp"-->
+                <!--/>-->
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:text="0"
+                android:background="#F2552C"
+                android:layout_margin="8dp"
+                android:textSize="34sp"
+                android:textStyle="bold"
+                android:textColor="@android:color/white"
+                android:id="@+id/giants_score"
+                />
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Single Hit"
+                android:onClick="singleHitG"
+                android:textColor="@android:color/white"
+                android:background="#F2552C"
+                android:layout_margin="8dp"/>
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Home Run"
+                android:onClick="homeRunG"
+                android:layout_margin="8dp"
+                android:background="#F2552C"
+                android:textColor="@android:color/white"/>
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Pitching Win"
+                android:onClick="pitchingWinG"
+                android:layout_margin="8dp"
+                android:background="#F2552C"
+                android:textColor="@android:color/white"/>
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_weight="1">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:src="@drawable/athletics"
+                android:layout_margin="32dp"/>
+
+            <!--<TextView-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:text="Athletics"-->
+                <!--android:gravity="center_horizontal"-->
+                <!--android:padding="4dp"-->
+                <!--android:textSize="24sp"-->
+                <!--android:textColor="#616161"-->
+                <!--android:fontFamily="sans-serif-medium"-->
+                <!--android:layout_marginTop="16dp"-->
+                <!--/>-->
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:text="0"
+                android:layout_margin="8dp"
+                android:textSize="34sp"
+                android:textStyle="bold"
+                android:background="#003831"
+                android:textColor="@android:color/white"
+                android:id="@+id/athletics_score"
+                />
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Single Hit"
+                android:onClick="singleHitA"
+                android:layout_margin="8dp"
+                android:background="#003831"
+                android:textColor="@android:color/white"/>
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Home Run"
+                android:onClick="homeRunA"
+                android:layout_margin="8dp"
+                android:background="#003831"
+                android:textColor="@android:color/white"/>
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Pitching Win"
+                android:onClick="pitchingWinA"
+                android:layout_margin="8dp"
+                android:background="#003831"
+                android:textColor="@android:color/white"/>
+
+
+        </LinearLayout>
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="RESET"
+        android:background="@android:color/white"
+        android:textColor="#000000"
+        android:padding="10dp"
+        android:onClick="resetScore"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="32dp"/>
+
+</RelativeLayout>
